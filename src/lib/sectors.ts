@@ -26,3 +26,9 @@ export async function getSectors(): Promise<Sector[]> {
 
   return parsed.data.data;
 }
+
+export function topLevelSectors(sectors: Sector[]): Sector[] {
+  return sectors
+    .filter((sector) => !sector.parent)
+    .sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+}
