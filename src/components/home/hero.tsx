@@ -18,12 +18,12 @@ export function Hero() {
       {/* Decoration only. aria-hidden keeps it away from screen readers. */}
       <div
         aria-hidden="true"
-        className="from-brand-dark via-brand-dark to-brand absolute inset-0 -z-10 bg-gradient-to-br"
+        className="from-brand-dark via-brand-dark to-brand absolute inset-0 -z-10 bg-linear-to-br"
       />
       <svg
         aria-hidden="true"
         focusable="false"
-        className="absolute inset-y-0 right-0 -z-10 h-full w-full [mask-image:linear-gradient(to_left,black,transparent)] text-white/15 md:w-2/3"
+        className="absolute inset-y-0 right-0 -z-10 h-full w-full mask-[linear-gradient(to_left,black,transparent)] text-white/15 md:w-2/3"
       >
         <defs>
           <pattern

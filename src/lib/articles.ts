@@ -4,7 +4,7 @@ import { strapiFetch } from "./strapi";
 const ARTICLES_PATH =
   "/api/articles?sort=publishedDate:desc&pagination[pageSize]=100&populate[coverImage]=true";
 
-export async function getArticles(): Promise<Article> {
+export async function getArticles(): Promise<Article[]> {
   "use cache";
   cacheLife("hours");
   cacheTag("articles");

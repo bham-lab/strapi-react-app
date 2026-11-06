@@ -1,7 +1,7 @@
 import { Article } from "@/lib/schemas/article";
-import { buildMediaUrl } from "@/lib/utilis/media-url";
+import { buildMediaUrl } from "@/lib/utils/media-url";
 import { env } from "@/lib/env";
-import { formatDate } from "@/lib/utilis/format-date";
+import { formatDate } from "@/lib/utils/format-date";
 import Image from "next/image";
 import Link from "next/link";
 type NewsCardProps = {
@@ -27,7 +27,7 @@ export function NewsCard({ article, featured = false }: NewsCardProps) {
     <article className="border-border bg-surface-alt focus-within:ring-brand hover:border-brand relative flex h-full flex-col overflow-hidden rounded-2xl border transition-colors focus-within:ring-2">
       <div
         className={`bg-brand-dark relative w-full ${
-          featured ? "aspect-[16/9]" : "aspect-[16/10]"
+          featured ? "aspect-video" : "aspect-16/10"
         }`}
       >
         "
