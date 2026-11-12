@@ -13,17 +13,17 @@ export function Hero() {
   return (
     <section
       aria-labelledby="hero-title"
-      className="relative isolate overflow-hidden bg-brand-dark text-white"
+      className="bg-brand-dark relative isolate overflow-hidden text-white"
     >
       {/* Decoration only. aria-hidden keeps it away from screen readers. */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-10 bg-gradient-to-br from-brand-dark via-brand-dark to-brand"
+        className="from-brand-dark via-brand-dark to-brand absolute inset-0 -z-10 bg-linear-to-br"
       />
       <svg
         aria-hidden="true"
         focusable="false"
-        className="absolute inset-y-0 right-0 -z-10 h-full w-full text-white/15 md:w-2/3 [mask-image:linear-gradient(to_left,black,transparent)]"
+        className="absolute inset-y-0 right-0 -z-10 h-full w-full mask-[linear-gradient(to_left,black,transparent)] text-white/15 md:w-2/3"
       >
         <defs>
           <pattern

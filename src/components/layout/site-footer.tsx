@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Container } from "@/components/ui/container";
 import { getFooterColumns } from "@/lib/navigation";
 import { getSiteSetting } from "@/lib/site-setting";
-import { safeExternalUrl } from "@/lib/url";
+import { safeExternalUrl } from "@/lib/utils/url";
 
 const DEFAULT_NAME = "Ministry of Innovation and Technology";
 // Do not call new Date() here. With Cache Components it fails during the build.
